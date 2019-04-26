@@ -71,7 +71,7 @@ def plantRecognition(plantFile):
         human_string = dictionary[labels[index]].decode("utf-8")
         score = predict[0][index]
 
-        #识别率低于0.01即跳出
+        #识别率低于0.01
         if score < 0.0099:
             break
 
